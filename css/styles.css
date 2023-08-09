@@ -422,13 +422,13 @@ img {
   align-items: center;
   background-color: var(--iris);
   border-radius: 50%;
-  transition: background-color var(--transition-main),
-    transform var(--transition-main);
+  transition: background-color var(--transition-main);
+  /* transform var(--transition-main); */
 }
 
 .team__socials__link:hover,
 .team__socials__link:focus {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   background-color: var(--ocean);
 }
 
@@ -476,13 +476,13 @@ img {
   border: 1px solid var(--light-slate);
   border-radius: 4px;
   color: var(--light-slate);
-  transition: border-color var(--transition-main), color var(--transition-main),
-    transform var(--transition-main);
+  transition: border-color var(--transition-main), color var(--transition-main);
+  /* transform var(--transition-main); */
 }
 
 .customers__socials__link:hover,
 .customers__socials__link:focus {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   border-color: var(--ocean);
   color: var(--ocean);
 }
@@ -554,7 +554,8 @@ img {
 
 .portfolio-projects__link {
   display: block;
-  transition: box-shadow var(--transition-main);
+  transition: box-shadow var(--transition-main),
+    transform var(--transition-main);
 }
 
 .portfolio-projects__link:hover,
@@ -563,8 +564,8 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-projects__link:hover .overlay__text,
-.portfolio-projects__link:focus .overlay__text {
+.portfolio-projects__link:hover .overlay,
+.portfolio-projects__link:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -573,19 +574,7 @@ img {
   overflow: hidden;
 }
 
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--iris);
-  transform: translateY(100%);
-  transition: transform var(--transition-main);
-  padding: 40px 32px;
-} */
-
-.ovarlay__text {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -710,14 +699,14 @@ img {
   align-items: center;
   background-color: var(--iris);
   border-radius: 50%;
-  transition: background-color var(--transition-main),
-    transform var(--transition-main);
+  transition: background-color var(--transition-main);
+  /* transform var(--transition-main); */
 }
 
 .footer__socials__link:hover,
 .footer__socials__link:focus {
   background-color: #31d0aa;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .footer__socials__icon {
